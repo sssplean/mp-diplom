@@ -400,8 +400,13 @@ body {
   border: 3px solid rgba(211, 179, 157, 0.6);
 }
 
-.teg__box {
-  display: inline;
+.tegs {
+  display: flex;
+
+  list-style-type: none;
+}
+
+.teg {
   margin-right: 16px;
 
   font-weight: bold;
@@ -409,13 +414,9 @@ body {
 
   color: #b59f5b;
 
-  list-style-type: none;
   text-transform: uppercase;
 }
 
-.teg {
-  color: #b59f5b;
-}
 
 .teg:hover {
   text-decoration: underline;
@@ -1051,13 +1052,14 @@ body {
 
     width: 260px;
     height: auto;
+    max-height: 70%;
     margin: 0;
     padding: 80px 0;
 
     color: #b59f5b;
     background-color: rgba(53, 53, 53, 0.8);
     box-shadow: -12px 6px 6px rgba(00, 00, 00, 0.6);
-    overflow: hidden auto;
+    overflow: scroll;
 
     transition-duration: 0.50s;
 
