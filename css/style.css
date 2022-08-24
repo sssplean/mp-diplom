@@ -1062,13 +1062,6 @@ body {
     overflow: scroll;
 
     transition-duration: 0.50s;
-
-    /* При увеличении количества пунктов меню,
-    необходимо активировать следующие свойства
-                для прокрутки меню:         */
-
-    /*height: 100%;
-    overflow: hidden auto;*/
   }
 
   .menu__link {
