@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOÉMI</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -19,22 +20,22 @@
             <span></span>
           </label>
           <ul class="menu-list">
-            <li>
+            <li class="menu__link__box">
               <a class="menu__link" href="#0">Главная</a>
             </li>
-            <li>
+            <li class="menu__link__box">
               <a class="menu__link" href="#0">Посты</a>
             </li>
-            <li>
+            <li class="menu__link__box">
               <a class="menu__link" href="#0">Статьи</a>
             </li>
-            <li>
+            <li class="menu__link__box">
               <a class="menu__link" href="#0">Теги</a>
             </li>
-            <li>
+            <li class="menu__link__box">
               <a class="menu__link" href="#0">Темы</a>
             </li>
-            <li>
+            <li class="menu__link__box">
               <a class="menu__link" href="#0">Контакты</a>
             </li>
           </ul>
@@ -44,13 +45,13 @@
     </header>
     <section class="trends">
       <h2 class="section-title trends__section-title">Сейчас в тренде</h2>
-      <article class="trend" id="first">
+      <article class="trend trend__first">
         <div class="trend__content">
           <ul class="tegs">
-            <li>
+            <li class="teg__box">
               <a href="#0" class="teg">Lifestyle</a>
             </li>
-            <li>
+            <li class="teg__box">
               <a href="#0" class="teg">Interior</a>
             </li>
           </ul>
@@ -59,10 +60,10 @@
           </h2>
         </div>
       </article>
-      <article class="trend" id="second">
+      <article class="trend trend__second">
         <div class="trend__content">
           <ul class="tegs">
-            <li>
+            <li class="teg__box">
               <a href="#0" class="teg">Food</a>
             </li>
           </ul>
@@ -71,13 +72,13 @@
           </h2>
         </div>
       </article>
-      <article class="trend" id="third">
+      <article class="trend trend__third">
         <div class="trend__content">
           <ul class="tegs">
-            <li>
+            <li class="teg__box">
               <a href="#0" class="teg">Lifestyle</a>
             </li>
-            <li>
+            <li class="teg__box">
               <a href="#0" class="teg">Travel</a>
             </li>
           </ul>
@@ -86,13 +87,13 @@
           </h2>
         </div>
       </article>
-      <article class="trend" id="fourth">
+      <article class="trend trend__fourth">
         <div class="trend__content">
           <ul class="tegs">
-            <li>
+            <li class="teg__box">
               <a href="#0" class="teg">Food</a>
             </li>
-            <li>
+            <li class="teg__box">
               <a href="#0" class="teg">Health</a>
             </li>
           </ul>
@@ -109,10 +110,10 @@
             <img src="images/last-post1.jpg" class="post__image" alt="Человек, ослеплённый солнцем, рискует утонуть">
             <div class="post__content">
               <ul class="tegs">
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Travel</a>
                 </li>
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Health</a>
                 </li>
               </ul>
@@ -134,10 +135,10 @@
             <img src="images/last-post2.jpg" class="post__image" alt="Человеческое существо в неестественной позе">
             <div class="post__content">
               <ul class="tegs">
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Health</a>
                 </li>
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Lifestyle</a>
                 </li>
               </ul>
@@ -159,7 +160,7 @@
             <img src="images/last-post3.jpg" class="post__image" alt="Пример эксплуатации человека человеком">
             <div class="post__content">
               <ul class="tegs">
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Music</a>
                 </li>
               </ul>
@@ -184,10 +185,10 @@
             <img src="images/last-post4.jpg" class="post__image" alt="Сумбурный натюрморт">
             <div class="post__content">
               <ul class="tegs">
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Lyfestyle</a>
                 </li>
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Food</a>
                 </li>
               </ul>
@@ -209,13 +210,13 @@
             <img src="images/last-post5.jpg" class="post__image" alt="Подушка со смешной (предположительно) надписью">
             <div class="post__content">
               <ul class="tegs">
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Lifestyle</a>
                 </li>
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Interior</a>
                 </li>
-                <li>
+                <li class="teg__box">
                   <a href="#0" class="teg">Art</a>
                 </li>
               </ul>
@@ -283,94 +284,97 @@
               </h4>
             </div>
           </article>
-          <form action="#0" class="search">
-            <label class="search__field">
-              <span class="visually-hidden">Поле поиска</span>
-              <input type="search" class="field" placeholder="Найти..." required>
+        </section>
+        <form action="#0" class="search">
+          <label class="search__field">
+            <span class="visually-hidden">Поле поиска</span>
+            <input type="search" class="field" placeholder="Найти..." required>
+          </label>
+          <button type="submit" class="send-request search__button">
+            <span class="visually-hidden">Кнопка поиска</span>
+          </button>
+        </form>
+        <section class="subscribe">
+          <h3 class="section-title sidebar__section-title">Рассылка</h3>
+          <form action="#0" class="email-subscribe">
+            <label class="subscribe__field">
+              <span class="visually-hidden">Поле ввода адреса электронной почты</span>
+              <input type="email" class="field" placeholder="Ваш email-адрес" required>
             </label>
-            <button type="submit" class="send-request search__button">
-              <span class="visually-hidden">Кнопка поиска</span>
+            <button type="submit" class="send-request subscribe__button">
+              Подписаться
             </button>
           </form>
         </section>
-        <div class="advanced-search">
-          <section class="subscribe">
-            <h3 class="section-title sidebar__section-title">Рассылка</h3>
-            <form action="#0" class="email-subscribe">
-              <label class="subscribe__field">
-                <span class="visually-hidden">Поле ввода адреса электронной почты</span>
-                <input type="email" class="field" placeholder="Ваш email-адрес" required>
-              </label>
-              <button type="submit" class="send-request subscribe__button">
-                <span class="visually-hidden">Кнопка подписки на рассылку</span>
-                Подписаться
-              </button>
-            </form>
-          </section>
-          <section class="teg-search">
-            <h3 class="section-title sidebar__section-title">Теги</h3>
-            <ul class="teg-search-links">
-              <li>
-                <a href="#0" class="teg-search__link">Fashion</a>
-              </li>
-              <li>
-                <a href="#0" class="teg-search__link">Music</a>
-              </li>
-              <li>
-                <a href="#0" class="teg-search__link">Lifestyle</a>
-              </li>
-              <li>
-                <a href="#0" class="teg-search__link">Art</a>
-              </li>
-              <li>
-                <a href="#0" class="teg-search__link">Interior</a>
-              </li>
-              <li>
-                <a href="#0" class="teg-search__link">Travel</a>
-              </li>
-              <li>
-                <a href="#0" class="teg-search__link">Food</a>
-              </li>
-              <li>
-                <a href="#0" class="teg-search__link">Health</a>
-              </li>
-            </ul>
-          </section>
-          <section class="themes-search">
-            <h3 class="section-title sidebar__section-title">Темы</h3>
-            <ul class="themes">
-              <li>
-                <a href="#0" class="theme">
-                  Красота<span class="theme__count">12</span>
-                </a>
-              </li>
-              <li>
-                <a href="#0" class="theme">
-                  Здоровье<span class="theme__count">4</span>
-                </a>
-              </li>
-              <li>
-                <a href="#0" class="theme">
-                  Образ жизни<span class="theme__count">145</span>
-                </a>
-              </li>
-              <li>
-                <a href="#0" class="theme">
-                  Музыка<span class="theme__count">28</span>
-                </a>
-              </li>
-              <li>
-                <a href="#0" class="theme">
-                  Спорт<span class="theme__count">62</span>
-                </a>
-              <li>
-                <a href="#0" class="theme">
-                  Йога<span class="theme__count">8</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
+        <section class="teg-search">
+          <h3 class="section-title sidebar__section-title">Теги</h3>
+          <ul class="teg-search-links">
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Fashion</a>
+            </li>
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Music</a>
+            </li>
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Lifestyle</a>
+            </li>
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Art</a>
+            </li>
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Interior</a>
+            </li>
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Travel</a>
+            </li>
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Food</a>
+            </li>
+            <li class="teg-search__link__box">
+              <a href="#0" class="teg-search__link">Health</a>
+            </li>
+          </ul>
+        </section>
+        <section class="themes-search">
+          <h3 class="section-title sidebar__section-title">Темы</h3>
+          <ul class="themes">
+            <li class="theme__box">
+              <a href="#0" class="theme">
+                Красота
+              </a>
+              <span class="theme__count">12</span>
+            </li>
+            <li class="theme__box">
+              <a href="#0" class="theme">
+                Здоровье
+              </a>
+              <span class="theme__count">4</span>
+            </li>
+            <li class="theme__box">
+              <a href="#0" class="theme">
+                Образ жизни
+              </a>
+              <span class="theme__count">145</span>
+            </li>
+            <li class="theme__box">
+              <a href="#0" class="theme">
+                Музыка
+              </a>
+              <span class="theme__count">28</span>
+            </li>
+            <li class="theme__box">
+              <a href="#0" class="theme">
+                Спорт
+              </a>
+              <span class="theme__count">62</span>
+            <li class="theme__box">
+              <a href="#0" class="theme">
+                Йога
+              </a>
+              <span class="theme__count">8</span>
+            </li>
+          </ul>
+        </section>
       </aside>
       <section class="products">
         <h2 class="section-title products__section-title">Наши изделия</h2>
@@ -399,7 +403,6 @@
               </div>
               <div class="product__link">
                 <button type="button" class="send-request product__link__button">
-                  <span class="visually-hidden">Кнопка перехода в карточку товара в магазине</span>
                   В магазин
                 </button>
               </div>
@@ -432,7 +435,6 @@
               </div>
               <div class="product__link">
                 <button type="button" class="send-request product__link__button">
-                  <span class="visually-hidden">Кнопка перехода в карточку товара в магазине</span>
                   В магазин
                 </button>
               </div>
@@ -464,7 +466,6 @@
               </div>
               <div class="product__link">
                 <button type="button" class="send-request product__link__button">
-                  <span class="visually-hidden">Кнопка перехода в карточку товара в магазине</span>
                   В магазин
                 </button>
               </div>
@@ -475,18 +476,18 @@
     </div>
     <footer class="footer">
       <ul class="social-icons">
-        <li>
-          <a href="#0" class="social-icon" id="dribbble">
+        <li class="social-icon__box">
+          <a href="#0" class="social-icon social-icon__dribbble">
             <span class="visually-hidden">Профиль компании на Дрибле</span>
           </a>
         </li>
-        <li>
-          <a href="#0" class="social-icon" id="pinterest">
+        <li class="social-icon__box">
+          <a href="#0" class="social-icon social-icon__pinterest">
             <span class="visually-hidden">Профиль компании на Пинтересте</span>
           </a>
         </li>
-        <li>
-          <a href="#0" class="social-icon" id="tumblr">
+        <li class="social-icon__box">
+          <a href="#0" class="social-icon social-icon__tumblr">
             <span class="visually-hidden">Профиль компании на Тамблере</span>
           </a>
         </li>
