@@ -35,6 +35,10 @@ body {
 
 /*--------------------HEADER--------------------*/
 
+body {
+  min-width: 320px;
+}
+
 .header {
   position: relative;
 
@@ -290,7 +294,7 @@ body {
   z-index: 2;
 
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% - 44px);
   margin: 16px 22px;
   padding: 34px 29px;
 
@@ -299,6 +303,7 @@ body {
 
 .tegs {
   display: flex;
+  flex-wrap: wrap;
 
   list-style-type: none;
 }
@@ -339,6 +344,8 @@ body {
 }
 
 .trend__title a {
+  word-wrap: break-word;
+
   color: #ffffff;
 }
 
@@ -358,6 +365,7 @@ body {
 
 .post {
   display: flex;
+  align-items: flex-start;
 }
 
 .post:nth-child(n+2) {
@@ -368,8 +376,6 @@ body {
   flex-shrink: 0;
   display: block;
   width: 381px;
-  height: 100%;
-  aspect-ratio: 127 / 98;
 
   background-color: #eff6f1;
 }
@@ -434,8 +440,6 @@ body {
 
 .post-preview__image {
   width: 70px;
-  height: 100%;
-  aspect-ratio: 1 / 1;
 
   font-size: 12px;
 
@@ -637,7 +641,6 @@ body {
 
 .product__image {
   width: 300px;
-  aspect-ratio: 25 / 17;
 
   background-color: #eff6f1;
 }
@@ -1041,11 +1044,6 @@ body {
     margin-bottom: 4vw;
   }
 
-  .product__image {
-    width: 38.02vw;
-    aspect-ratio: 292 / 227;
-  }
-
   .product__content {
     padding: 3.36vw 2.6vw;
   }
@@ -1294,7 +1292,6 @@ body {
 
   .product__image {
     width: 79vw;
-    aspect-ratio: 1 / 1;
   }
 
   .product__content {
